@@ -6,7 +6,7 @@ from models.content_model import Content
 
 app = FastAPI()
 origins = [
-    "https://dctfinal-frontend.vercel.app/"
+    "https://dctfinal-frontend.vercel.app"
 ]
 
 app.add_middleware(
