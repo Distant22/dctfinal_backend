@@ -3,7 +3,9 @@ from services.sentiment_service import analyze
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from models.content_model import Content
+import os
 
+os.getenv()
 app = FastAPI()
 origins = [
     "https://dctfinal-frontend.vercel.app"
