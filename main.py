@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from models.content_model import Content
 import os
 
-os.getenv()
+credentials_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 app = FastAPI()
 origins = [
     "https://dctfinal-frontend.vercel.app"
