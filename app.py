@@ -4,7 +4,11 @@ from services.music_service import create_melody_service
 from fastapi.middleware.cors import CORSMiddleware
 from models.content_model import Content
 
-import os
+import os, sys
+
+current_directory = os.path.dirname(os.path.realpath(__file__))
+services_path = os.path.join(current_directory, 'services')
+sys.path.append(services_path)
 
 app = FastAPI()
 origins = [
