@@ -1,0 +1,4 @@
+# nothing here
+fastapi
+uvicorn
+google-cloud-language
