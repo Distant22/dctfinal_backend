@@ -30,3 +30,4 @@ def read_root():
 @app.post("/sentiment/")
 async def read_item(content: Content):
     return await analyze(content)
+
