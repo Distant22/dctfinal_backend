@@ -7,6 +7,7 @@ WORKDIR /code
 # 
 COPY ./requirements.txt /code/requirements.txt
 COPY . /code
+COPY key.json /code
 
 # 
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
